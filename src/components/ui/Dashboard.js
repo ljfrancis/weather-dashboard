@@ -36,7 +36,7 @@ export const Dashboard = () => {
 				setForecast(JSON.parse(localStorage.getItem(forecastKey)));
 			} else {
 				fetch(
-					`http://api.weatherapi.com/v1/forecast.json?key=${weatherKey}&q=${location}&aqi=yes&days=6`,
+					`https://api.weatherapi.com/v1/forecast.json?key=${weatherKey}&q=${location}&aqi=yes&days=6`,
 				)
 					.then((res) => {
 						return res.json();
@@ -58,7 +58,7 @@ export const Dashboard = () => {
 					);
 				} else {
 					fetch(
-						`http://api.weatherapi.com/v1/history.json?key=${weatherKey}&q=${location}&date=${hDay}`,
+						`https://api.weatherapi.com/v1/history.json?key=${weatherKey}&q=${location}&date=${hDay}`,
 					)
 						.then((res) => {
 							return res.json();
