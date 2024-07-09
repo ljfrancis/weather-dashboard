@@ -32,7 +32,7 @@ export const Header = ({ location }) => {
 
         <a
           id="searchButton"
-          href={`/?location=${searchText}`}
+          href={`${window.location.href.split('?')[0]}/?location=${searchText}`}
           className="md:px-6 py-3 px-2 text-white bg-indigo-500 rounded-md cursor-pointer"
         >
           Search
