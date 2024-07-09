@@ -47,7 +47,7 @@ export const iconMap = {
   335: faSnowflake,
   338: faSnowflake,
   350: faIcicles,
-  353: faSnowflake,
+  353: faCloudRain,
   356: faCloudShowersHeavy,
   359: faCloudShowersHeavy,
   362: faIcicles,
