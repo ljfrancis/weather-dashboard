@@ -3,6 +3,7 @@ import { Overview } from "../Overview.js";
 import { ForecastDay } from "../ForecastDay.js";
 import { Conditions } from "./Conditions.js";
 import { Header } from "../Header.js";
+import { Footer } from "../Footer.js";
 import { PrecipitationGraph } from "./PrecipitationGraph.js";
 import { RecentTempsGraph } from "./RecentTempsGraph.js";
 import { useSearchParams } from "react-router-dom";
@@ -112,12 +113,6 @@ export const Dashboard = () => {
 	}
 
 	const timezone = forecast?.location?.tz_id;
-
-	console.log("forecast");
-	console.log(forecast);
-
-	console.log("history");
-	console.log(history);
 
 	return (
 		<div className="m-8">
@@ -236,6 +231,7 @@ export const Dashboard = () => {
 				<PrecipitationGraph precipitation={precipitation} />
 				<RecentTempsGraph temperatures={pastTemps} />
 			</div>
+			<Footer></Footer>
 		</div>
 	);
 };
